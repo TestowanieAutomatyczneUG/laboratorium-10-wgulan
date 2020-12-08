@@ -6,7 +6,7 @@ class Note:
             raise ValueError("Name cannot be an empty string")
         if type(note) != float:
             raise TypeError("Note must be a float type")
-        if not 2 < note < 6:
+        if not 2 <= note <= 6:
             raise ValueError("Note must be in beteween 2 and 6")
         self.name = name
         self.note = note
