@@ -17,11 +17,11 @@ class TestNote(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "Note must be a float type"):
             Note("xtz", 4)
 
-    def test_note_disallow_note_lte_2(self):
+    def test_note_disallow_note_lt_2(self):
         with self.assertRaisesRegex(ValueError, "Note must be in beteween 2 and 6"):
             Note("xtz", 1.99)
 
-    def test_note_disallow_note_gte_6(self):
+    def test_note_disallow_note_gt_6(self):
         with self.assertRaisesRegex(ValueError, "Note must be in beteween 2 and 6"):
             Note("xtz", 6.01)
 
