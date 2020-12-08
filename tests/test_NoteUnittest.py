@@ -1,6 +1,7 @@
 from src.notes.Note import Note
 import unittest
 
+
 class TestNote(unittest.TestCase):
     def setUp(self):
         self.temp = Note("John", 4.2)
@@ -35,3 +36,7 @@ class TestNote(unittest.TestCase):
 
     def tearDown(self):
         self.temp = None
+
+
+if __name__ == "__main__":
+    unittest.main()
